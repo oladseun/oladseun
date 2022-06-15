@@ -12,7 +12,7 @@ import webbrowser
 import pyautogui
 
 USERNAME = 'Oluwaseun'
-BOTNAME = 'ZUZU'
+BOTNAME = 'JOJO'
 
     #Greeting the user according to the time.
 def greet_user():
@@ -149,8 +149,7 @@ def run_alexa():
     elif 'sleep' in command :
         print(command)
         talk('Device sleep........')
-        time.import
-        time.sleep(x)
+        time.sleep(90)
         
     else:
         print('Repeat command, please.')
