@@ -128,23 +128,29 @@ def run_alexa():
         
         
     elif 'who made you' in command :
-        print (command)
+        print(command)
         talk('I was made by Oluwaseun')
     
     elif 'end' in command :
-        print (command)
-        talk('I was made by Oluwaseun')
-        
-    elif 'sleep' in command :
         print(command)
-        talk('Device going to sleep.....')
-        os.system("nircmd.exe standby")
+        talk('Bye Oluwaseun, Hoping we talk soon')
+        exit()
+        
+    elif 'hibernate' in command :
+        print(command)
+        talk('Device going for a long sleep.....')
+        os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
         
     elif 'shut down' in command :
-        print (command)
+        print(command)
         talk('Shutting down device........')
         os.system("shutdown /s /t 1")
         
+    elif 'sleep' in command :
+        print(command)
+        talk('Device sleep........')
+        time.import
+        time.sleep(x)
         
     else:
         print('Repeat command, please.')
